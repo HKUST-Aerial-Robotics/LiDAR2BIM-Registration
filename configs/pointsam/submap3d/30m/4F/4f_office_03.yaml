@@ -1,0 +1,20 @@
+# dynamic octree
+dyna_octree:
+  resolution: [0.3, 0.3, 0.3]
+  # resolution: [5, 5, 5] 
+  depth: 5
+
+plane_seg:
+  ransac_iter: 5
+  ransac_thd: 0.01 # meter.
+  merge_thd_p: 0.5 # meter
+  merge_thd_n: 5 # degree
+  eigen_thd: 5
+
+benchmarks:
+#  root: "/home/qzj/code/test/bim-relocalization/data/LiBIM-UST-raw"
+  root: "./data/LiBIM-UST-raw"
+  seq: "4f_office_03"
+  interval: "30m"
+  maptype: "submap3d"
+  min_height: -1.7

@@ -1,0 +1,20 @@
+# dynamic octree
+dyna_octree:
+  resolution: [1.5, 1.5, 1.5]
+  # resolution: [5, 5, 5] 
+  depth: 5
+
+plane_seg:
+  ransac_iter: 5
+  ransac_thd: 0.2 # meter.
+  merge_thd_p: 0.2 # meter
+  merge_thd_n: 3 # degree
+  eigen_thd: 50
+
+
+benchmarks:
+  root: "./data/LiBIM-UST-raw"
+  seq: "BuildingDay"
+  interval: "15m"
+  maptype: "submap3d"
+  min_height: -0.5
